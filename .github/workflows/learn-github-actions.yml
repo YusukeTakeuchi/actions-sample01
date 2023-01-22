@@ -12,3 +12,7 @@ jobs:
       - run: bats -v
       - run: echo ${{ github.sha }}
       - run: echo ${{ github.ref  }}
+  randomly-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: [[ $(($RANDOM%2)) -eq 0 ]]
