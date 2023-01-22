@@ -23,6 +23,6 @@ jobs:
       - run: '[[ 1 -eq 0 ]]'
   test:
     runs-on: ubuntu-latest
-    needs: check--bats-version
+    needs: check-bats-version
     steps:
       - run: yarn test:ci
