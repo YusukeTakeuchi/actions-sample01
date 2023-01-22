@@ -17,3 +17,7 @@ jobs:
     steps:
       - run: echo rand
       - run: '[[ $(($RANDOM%2)) -eq 0 ]]'
+  always-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: '[[ 1 -eq 0 ]]'
