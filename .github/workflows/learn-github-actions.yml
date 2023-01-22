@@ -15,4 +15,5 @@ jobs:
   randomly-fail:
     runs-on: ubuntu-latest
     steps:
+      - run: echo rand
       - run: [[ $(($RANDOM%2)) -eq 0 ]]
