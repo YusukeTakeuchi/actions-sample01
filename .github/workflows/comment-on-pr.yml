@@ -1,7 +1,7 @@
 name: comment-on-pr
 on:
   pull_request:
-    types: [ opened ]
+    types: [ opened, synchronize ]
 
 jobs:
   comment-on-pr:
