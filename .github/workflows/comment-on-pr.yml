@@ -14,5 +14,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `number: ${context.issue.number}`
+              body: `branch: ${github.head_ref}`
             })
