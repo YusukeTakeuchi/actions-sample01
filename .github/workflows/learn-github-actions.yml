@@ -24,6 +24,7 @@ jobs:
       - run: |
           pwd
           ls
+          ls /
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
